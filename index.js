@@ -10,5 +10,5 @@ let result = checkErrors(process.argv)
 
 if (result) {
   let options = checkOptions(process.argv);
-  transform(options[0],options[1],options[2],options[3])
+  transform(...options)
 }
